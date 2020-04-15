@@ -62,6 +62,7 @@ pipeline {
          }
          
         stage('deploy') {
+            steps{
             sshagent(['tomcat-new`']) {
                 sh """  
                      ssh -o StrictHostKeyChecking=no target/TomcatMavenApp-2.0.war  root@34.70.79.67/home/dineshreddy99077/noida/apache-tomcat-7.0.103/webapps/
@@ -69,6 +70,7 @@ pipeline {
                      ssh root@34.70.79.67 /home/dineshreddy99077/noida/apache-tomcat-7.0.103/bin/startup.sh
 
                 """
+            }
             }
         }
 
