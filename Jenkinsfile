@@ -6,7 +6,9 @@ pipeline {
     stages {
         
         stage ('checkout'){
+            steps {
             git  'https://github.com/dinrag/srinu.git'
+            }
         }
 
         stage ('compile') {
