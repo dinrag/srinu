@@ -58,7 +58,10 @@ pipeline {
          }
          
          stage('deploy in tomcat')
-          sh "cp target
+          sh "cp target\\TomcatMavenApp-2.0.war \"$(tomcatWeb)\\TomcatMavenApp-2.0.war\""
+          sleep(time:5,unit:"SECONDS")
+          sh "$(tomcatBin)\\startup.sh"
+        sleep(time:5,unit:"SECONDS")
 
         
 
