@@ -1,0 +1,933 @@
+/** override css here for new layout **/
+  .hide {
+    display: none;
+  }
+  .goleft {
+    float: left;
+  }
+  .goright {
+    float: right;
+  }
+
+  .large-font {
+    font-size: 2em;
+  }
+
+  .table-box {
+	display:table;
+  }
+
+  .table-box-cell {
+	display:table-cell;
+	vertical-align: middle;
+  }
+
+  
+  .learn-more a {
+    text-align:right;
+    font-size: 1.6em;
+    font-weight: normal;
+    padding-right: 10px;
+	color: white;
+	float:right;
+  }
+
+  .no-border {
+    border: 0px !important;
+  }
+
+  .border-all {
+    border: #929292 dashed 1px;
+  }
+
+  .border-lt { /* left, top and bottom */
+    border-top: #929292 dashed 1px;
+    border-left: #929292 dashed 1px;
+  }
+
+  .border-left {
+    border-left: #929292 dashed 1px;
+  }
+
+  .border-right {
+    border-right: #929292 dashed 1px;
+  }
+
+  .border-bottom {
+    border-bottom: #929292 dashed 1px;
+  }
+
+  .container_24 { width: 960px; }
+
+  .container_24 .grid_18 {
+    width: 720px;
+  }
+  
+  #content-expander {
+    cursor: pointer;
+  }
+
+  #content-copy-expand {
+	margin-top: 25px;
+	font-size: 1.4em;
+	line-height: 1.6em;
+  }
+  
+  #content-copy-expand .sub-heading {
+    color: #181945;
+	font-weight: bold;
+  }
+
+  .main-content-whycno,
+  .main-content-careers
+  {
+    width: 720px !important;
+   	padding: 0px !important;
+  }
+
+  .info-tab-toggle  {
+    float: right;
+  }
+
+  .info-tab-close {
+	cursor: pointer;
+  }
+  
+  .info-tab-content {
+	min-height: 170px;
+  }
+  
+/*** Why CNO Main Page ***/  
+  .main-content-whycno .grid_18,
+  .main-content-careers .grid_18
+  {
+    margin: 0px;
+    padding: 0px;
+    border: #929292 dashed 1px;
+    border-top: 0px;
+    background-color: white;
+  }
+
+  .main-content-whycno .dl_pad, .dl_pad dl dd
+  {
+    background-color: #87898a;
+    color: white;
+    padding: 20px;
+    min-height: 343px;
+    display: block;
+  }
+
+  .top-banner-intro-career {
+    height: auto;
+  }
+
+
+  .main-content-whycno .top-banner-intro-career dl
+  {
+    margin: 8px !important;
+  	width: 663px !important;
+  }
+
+  .main-content-whycno .top-banner-intro-career dl dd {
+    color: white;
+  }
+
+  .main-content-whycno #info-container {
+    width: 720px;
+    float:right;
+    color: white;
+    border: 0px;
+    border-top: #929292 dashed 1px;
+  }
+
+  .info-box.first {
+    margin-left: 8px;
+  }
+
+  .info-box {
+    width: 103px;
+    height: 104px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .info-box.active {
+    background-image: url('/content/cfgi/images/icons/why-cno/carrot.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .info-box img {
+    margin-top: 10px;
+  }
+
+  .spacer_box { width:17px; height:5px; float:left; }
+
+  .red { background-color: #e8151c !important; }
+  .green { background-color: #5EA931 !important; }
+  .blue { background-color: #008bd4 !important; }
+  .purple { background-color: #8a1a80 !important; }
+  .grey { background-color: #87898a !important; }
+  .orange { background-color: #f48518 !important; }
+
+  .dark-blue { background-color: #171844 !important; }
+
+  .light-red { background-color: #ee5055 !important; }
+  .light-green { background-color: #86bf65 !important; }
+  .light-blue { background-color: #40a8df !important; }
+  .light-purple { background-color: #a753a0 !important; }
+  .light-grey { background-color: #a5a7a7 !important; }
+  .light-orange { background-color: #f7a452 !important; }
+
+  
+  #mediahub {
+	cursor: pointer;
+  }
+  
+  #medianav { 
+	background-color: gray;
+	opacity: .6;
+    filter: alpha(opacity=60);
+	min-width: 30px; 
+	height:20px;
+	padding:0 5px 0 10px;
+	position:absolute; 
+	top: 208px;
+	right:7px; 
+	z-index: 50;
+  }  
+  
+  a.service0 {font-size: 2.5em; line-height: 0.75em; color:black; text-decoration:none; padding-right: 5px;}
+
+  a.service0:hover {color: red;}
+  
+  a.service0.activeSlide {color: white;}
+  
+  
+  a.service1 {font-size: 2.5em; line-height: 0.75em; color:black; text-decoration:none; padding-right: 5px;}
+  
+  a.service1:hover {color: red;}
+  
+  a.service1.activeSlide {color: white;}
+  
+  
+  a.service2 {font-size: 2.5em; line-height: 0.75em; color:black; text-decoration:none; padding-right: 5px;}
+  
+  a.service2:hover {color: red;}
+  
+  a.service2.activeSlide {color: white;}
+  
+  
+  a.service3 {font-size: 2.5em; line-height: 0.75em; color:black; text-decoration:none; padding-right: 5px;}
+  
+  a.service3:hover {color: red;}
+  
+  a.service3.activeSlide {color: white;}
+  
+  
+  a.service4 {font-size: 2.5em; line-height: 0.75em; color:black; text-decoration:none; padding-right: 5px;}
+  
+  a.service4:hover {color: red;}
+  
+  a.service4.activeSlide {color: white;}
+
+  .accordion-info-tab {
+     margin: 0px;   
+  }
+  
+  .accordion-info-tab dt, .accordion-info-tab dd {
+        padding: 3px;
+        border-bottom: 0; 
+   }
+   
+  .accordion-info-tab dt a {
+         display: block;
+         color: black;
+         font-weight: bold;
+  }
+  
+  .accordion-info-tab dd {
+       border-top: 0; 
+       font-size: 12px;
+  }
+
+  
+/*** Why CNO Details Page ***/  
+
+  #whycno-details {
+      padding: 5px;
+	  border: #929292 dashed 1px;
+	  border-bottom: 0px;
+	  width: 475px;
+	  min-height:792px;
+  }
+  
+  #whycno-details .spacer_box {
+      float: none;
+      width:100%;
+	  height:8px; 
+  }
+  
+  #whycno-details .content {
+	 background-color: #E0E0E0;
+	 padding: 10px;
+  }
+  
+  #whycno-details .single-entry {
+    min-height: 792px;
+  }
+  
+  #whycno-details h1 {
+     color: white;
+	 background-color: #87898A;
+	 margin-bottom: 8px;
+	 font-family:Arial;
+	 font-weight: normal;
+	 padding: 5px;
+  }
+  
+  .whycno-box-right {
+     width: 220px;
+	 padding:5px;
+	 border: 1px dashed #929292;
+	 border-left:0px;
+  }
+
+  .whycno-box-right h3 {
+	font-size: 1.6em;
+	padding: 5px;
+  }
+  
+  .whycno-box-right .spacer {
+	width: 100%;
+	height: 8px;
+  }
+  
+  .whycno-other-box {
+	 border-top:0px;
+	 padding-bottom: 5px;
+  }
+  
+  .whycno-box-right .nav {
+     background-color: #D7D7D7;
+     border: 0px;
+	 padding: 5px;
+  }
+  
+  .whycno-box-right .nav .active {
+     background-color: #9C9A9A;	 
+  }
+
+  .whycno-box-right .nav a {
+	display: block;
+	padding: 5px;
+	color: #77787B;
+  }
+
+  .whycno-box-right .nav .active a {
+     background-color: #9C9A9A;	
+     color: #fff;	 
+  }
+
+  .whycno-box-right .nav a:hover {
+     background-color: #9C9A9A;
+	 color: #fff;
+  }
+  
+  .whycno-box-right .search-careers {
+     background-color: #999A9B;
+     border: 0px;
+  	 padding: 5px;
+     padding-bottom: 25px;
+  }
+
+  /*** Recruiting Process ***/
+
+  .main-content-recruit .grid_18  {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: white;
+  }
+
+  .nav-big, .nav-big-inner {
+    width:224px;
+    height:224px;
+    padding:7px;
+    float:left;
+  }
+  
+  .info-box-large {
+    width: 224px;
+    height: 224px;
+    float: left;
+    padding: 0;
+    margin: 0px;
+    cursor: pointer;
+    color: white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .info-box-large .number {
+	color:white;
+	font-family:ScalaSans-BoldLF;
+	font-size:7.0em;
+	margin:0 auto;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+	line-height:0.30em;
+  }
+  
+  .info-box-table {
+	display:table;
+  }
+  
+  .info-box-large .sub-text {
+     font-family:Arial;
+	 font-size:.3em;
+	 text-transform:uppercase;
+  }
+  
+  .info-box-tips {
+	font-size:0.80em;
+	color:#000;
+    width: 224px;
+	margin-left: 10px;
+	margin-top: 5px;
+  }
+
+	.info-box-tips p {
+    font-style:italic;
+  }
+
+  .info-box-tips  h3 {  
+	font-size: 1.6em;
+	font-weight: bold;
+  margin-bottom: 5px;
+  }
+  
+  #recruit-content {
+    width: 460px;
+    padding: 10px;
+    float: right;
+  }
+  
+  .nav-small {
+	float: left; 
+   }
+   
+  .nav-small .small-box {
+	width:60px;
+	height:60px;
+	display:table;
+	float: left;
+  }
+
+  #nav-recruit {
+	float:right;
+	width:480px;
+	margin-left: 10px;
+	display:block;	
+  }
+
+  .nav-small .small-number {
+    color: white;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 2.0em;
+	font-family:ScalaSans-BoldLF;
+	margin:0 auto;
+	text-align:center;
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }  
+  
+  .font-dark {
+    color: #000;
+  }
+
+ /*** Careers main page ***/
+ 
+ .careers-left {
+	width: 65%;
+	border-right: 1px dashed #ccc;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	float: left;	
+ }
+ 
+ .careers-right {
+	width: 35%;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	float: left;
+ }
+ 
+ .careers-padding {
+	padding: 7px;	
+ }
+
+  .careers-padding-left-right {
+	padding-left: 7px;	
+	padding-right: 7px;	
+ }
+
+ .careers-padding-no-right {
+	padding: 7px;	
+	padding-right: 0px;
+ }
+ 
+ .careers-divider {
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px dashed #ccc;
+ }
+
+ .careers-media-box {
+    height: 224px;
+	background-color: blue;
+ }
+
+ .careers-main-container {
+	 padding: 7px;	
+   width:394px;
+   border-right: 1px dashed #ccc;
+ }
+ 
+ .careers-content-box {
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+ }
+ 
+ .careers-text {
+  width: 100%;
+	height: 163px;
+	float: left;
+	background-color: #fff;
+ }
+
+ .careers-soc-box {
+  width: 55px;
+	float: left;
+	border-bottom: 1px dashed #ccc;
+ }
+
+ .careers-social-box {
+  width: 55px;
+	float: left;
+	border-left: 1px dashed #ccc;
+ }
+
+ .careers-social-icon {
+  width: 45px;
+	height: 44px;
+	background-color: yellow;
+ }
+
+
+ .careers-community-container {
+	 width: 394px;
+     padding: 7px;	
+	 float: left;
+ }
+ 
+ .careers-community-container .careers-community-involvement {
+	width: 394px;
+ 	height: 44px;
+	background-color: #ED3224;
+	color: white;
+	font-family: ScalaSans-BoldLF;
+	font-size: 2.0em;
+	text-align: center;	
+	display: block;
+ }
+ 
+ .careers-community-container .careers-community-involvement img {
+	margin-top:8px;
+ }
+
+ .careers-community-container .careers-community-involvement .copy {
+	position:relative;
+	top:-3px;
+ }
+ 
+ .careers-related-companies {
+    width: 100%;
+	height: 104px;
+	background-color: #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+	border-top: 0px dashed #ccc;
+ }
+ 
+  .search-careers h3 {
+   font-size: 1.6em;
+   padding:5px;
+   color: white;
+  }
+
+  .search-careers {
+   height: 275px;
+   background-color:#ED3223;
+   border: 0px;
+   padding: 7px;
+  }
+  
+  .search-careers .search-form {
+	height: 201px;
+	width: 97%;
+	color: white;
+	padding-left: 5px;
+  }
+   /* added by scd */ 
+.search-careers .field {clear:left; }
+.search-careers .field label {display:block; float:left; width:100%; font-weight:bold; color:#fff;}
+.search-careers .field input, .field select {display:block; float:left; width:98%;margin-bottom:10px;}
+.search-careers #searchCareerButton {margin-top:5px; float:right;}
+
+  
+  .search-careers .hot-job-list {
+    margin-left: 5px;
+    margin-bottom:20px;
+  }
+
+  .search-careers .job-list {
+	color: white;
+  }
+
+  .search-careers-inner {
+   height: 200px;
+  }
+  
+  .careers-meet-people {
+   height: 91px;
+   background-color:#202457;
+   border: 0px;
+   padding: 7px; 
+   display: block;   
+  }
+
+  .careers-meet-people img {
+    position: relative;
+	top: -6px;
+  }
+
+  /** our biz service **/
+ 
+  .main-content-our-biz-service {
+    width: 720px !important;
+    padding: 0px !important;
+    margin: 0px;
+    border-top: 0px;
+    background-color: white;
+  }
+
+  .our-biz-service-copy    {
+    background-color: #fff;
+    color: white;
+	width: 706px;
+    height: 224px;
+    padding: 5px;
+    display: block;    
+    border: #929292 dashed 1px;
+	border-bottom: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  .our-biz-service-box-copy {
+    width: 100%;
+    height: 212px;
+    float: left;
+    padding: 0;
+    margin: 0px;
+    cursor: pointer;
+    color: black;
+	background-color: #ede8df;
+	overflow: hidden;
+  }
+  
+  .our-biz-service-intro {
+	padding:20px;
+  }
+  
+  .our-biz-service-intro h2 {
+padding: 80px 20px 20px 20px;
+font-size: 29px;
+color:#1E1E1E;
+}
+.our-biz-service-intro p {
+margin-left: 20px;
+margin-right: 20px;
+font-size: 16px;
+color: #807F83;
+}
+
+  
+
+	.our-biz-service-nav {
+	width: 214px;
+	height: 224px;
+	padding: 10px;
+	float: left;
+	}
+
+  .our-biz-service-box {
+    width: 224px;
+    height: 224px;
+    float: left;
+    padding: 0;
+    margin: 0px;
+    cursor: pointer;
+    color: black;
+    box-sizing: border-box;
+  }
+
+.our-biz-service-box h2 {
+font-size: 1.4em;
+font-family: georgia, serif;
+color: #1E1E1E;
+font-weight:normal;
+min-height:40px; 
+}
+
+
+.our-biz-service-box .sub-head {
+font-weight: bold;
+color: #000;
+display: none;
+}
+
+
+.our-biz-service-text {
+height: 120px;
+color: #7F8184;
+}
+
+  
+  /* details page for our biz shared */
+  
+  .our-biz-left-top-container {
+	width: 238px;
+	float: left;
+	border-left: 0px;
+  }
+  
+  .our-biz-right-top-container {
+	width: 466px;
+	height: 222px;
+	padding:5px;
+	float: left;
+	position: relative;
+	text-align: left;
+    border: #929292 dashed 1px;
+	border-left: 0px;
+  } 
+  
+  .our-biz-mini-container {
+	width: 237px;
+	height: 120px;
+	padding:5px;
+    border-left: #929292 dashed 1px;
+    border-right: #929292 dashed 1px;
+    border-top: #929292 dashed 1px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  
+  .our-biz-mini-box {
+	width: 224px;
+	height: 104px;
+	background-color: white;
+  }
+  
+  .our-biz-left-bottom-container {
+	width: 463px;
+	height: 224px;
+	padding:5px;
+	float: left;
+    border-left: #929292 dashed 1px;
+    border-bottom: #929292 dashed 1px;
+    border-right: #929292 dashed 1px;
+  }
+  
+  .our-biz-right-bottom-container {    
+	width: 229px;
+	height: 224px;
+	padding:5px;
+	float: left;
+	color: white;
+    border-bottom: #929292 dashed 1px;
+    border-right: #929292 dashed 1px;
+    overflow: hidden;
+  } 
+
+  .our-biz-right-bottom-content {
+	background-color: #525252;
+    padding-left: 10px;
+    padding-right: 10px;
+	height: 224px;
+  }
+  
+  .our-biz-right-bottom-content  h3 {
+    color: white;
+    font-weight: bold;
+	font-size: 2.0em;
+	font-family:ScalaSans-BoldLF;
+	padding-top: 10px;
+	margin-bottom: 10px;
+  }
+
+  .our-biz-right-bottom-content  a {
+    color: white;
+	font-size: 1.2em;
+	font-family: Tahoma, Arial;
+	display: block;
+	padding:0px;
+  }
+
+  .our-biz-right-bottom-content  a:hover {
+    background-color: #727272;
+  }
+
+  .our-biz-right-bottom-container  h4 {
+    color: white;
+	width: 100%;
+	font-size: 1.2em;
+	font-family:Tahoma, Arial;
+	cursor: pointer;
+	display: block;
+	margin-bottom: 5px;
+  }
+  .our-biz-right-bottom-container  h4:hover {
+    background-color: #727272;
+  }
+  
+  /** our people **/
+
+  .main-content-our-people {
+    width: 720px !important;
+   	padding: 0px !important;
+    margin: 0px;
+    border-top: 0px;
+    background-color: white;
+  }
+  
+  .our-people-nav {
+    width:224px;
+    height:104px;
+    padding:5px;
+    float:left;
+  }
+
+  .our-people-box {
+    width: 224px;
+    height: 104px;
+    float: left;
+    padding: 0;
+    margin: 0px;
+    cursor: pointer;
+    color: white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+  /** connect / social media **/
+
+  .main-content-connect {
+    width: 720px !important;
+    padding: 0px !important;
+    margin: 0px;
+    border-top: 0px;
+    background-color: white;
+  }
+
+  .connect-nav {
+    width:224px;
+    height:224px;
+    padding:5px;
+    float:left;
+  }
+
+  #connect-left-side {
+    width:472px;
+	float:left;
+	position: relative;
+  }
+  
+  .connect-box {
+    width: 224px;
+    height: 224px;
+    float: left;
+    padding: 0;
+    margin: 0px;
+    cursor: pointer;
+    color: white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+
+
+  .connect-anim-box {
+    position: relative;
+  }
+
+  .connect-expand {
+     background-color: #42B6F3; /* temp color for now */
+     position:absolute;
+     width:471px;
+     height:471px;
+     z-index: 999;
+  }
+
+  .connect-news {
+     width:237px;
+     float:left;
+     padding:5px;
+     border: #929292 dashed 1px;
+	 border-left: 0px;
+  }
+
+  .connect-news-box {
+    width: 236px;
+    height: 459px;
+    max-height: 459px;
+    float: left;
+    padding: 10px;
+    margin: 0px;
+	background-color: #ede8df;
+    overflow:hidden;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  
+  .connect-news-box  span.sub-head {
+    color: #E61A1C;
+	font-weight: bold;
+  }
+
+  .connect-news-box .sub-head a {
+    color: #E61A1C;
+	font-size: 0.90em;
+  }
+
+  .rss_data span.rss_data_date {
+    font-size:0.90em;
+    color: #777;
+  }
+
+  .rss_data a {
+    font-weight: bold;
+    color: #333;
+  }

@@ -1,0 +1,557 @@
+/* 
+    Document   : styles.css
+    Created on : Mar 10, 2010, 3:31:50 PM
+    Author     : Sourcetop (Onirudda Odikare)
+*/
+
+/* ************* Reset ************************** */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+    display:block;
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img { border: none; }
+
+
+/* ************** Global ************* */
+body {
+  font-family:Arial;
+  font-size:12px;
+  background-color:#fff;
+}
+
+a{text-decoration:none; color:#7F8184;}
+a:hover,
+.link-me{color:#EE3224;}
+.link-me:hover{text-decoration:underline;}
+h1{font-family:'Georgia';font-size:31px;line-height:31px; font-weight:normal;}
+h2{font-size:19px;padding-bottom:20px; font-weight:normal;}
+p{padding-bottom:10px;}
+.height-20{height:20px;}
+
+/* ************** Custom ************* */
+
+.container{}
+.logo{height:102px;border-bottom:1px solid #e6e7e8;}
+.logo img{margin-top:30px;}
+
+.main-content{display:inline;float:left;margin-left:0;margin-right:0;}
+
+/**************** left side bar *****************/
+
+.left-side-bar ul{margin:12px;}
+.left-side-bar ul li{list-style-type:none;padding:3px 0;}
+.left-side-bar ul li a{color:#7F8184;}
+.left-side-bar ul li.active a,
+.left-side-bar ul li a:hover {color:#EE3224;}
+.left-side-bar ul li ul{margin-top:-5px;margin-bottom:0;}
+.left-side-bar ul li ul li a span{padding-right:5px;}
+
+/* content ------------------------------------------------------------------ */
+.content-section{min-height:792px;}
+
+.page-title{height:34px;padding-bottom:8px;}
+.page-title img{margin-top:2px;}
+
+/**************** home *****************/
+.home-banner .left{background-image:url(/content/cfgi/images/home-topbanner-left.gif);background-repeat:no-repeat;height:240px;}
+.home-banner .left dl{width:224px;padding-left:14px;margin-top:75px;color:#fff;}
+.home-banner .left dl dd{padding-top:8px;}
+.home-banner .left dt.head{font-size:25px;margin-top:-15px}
+.home-banner .left dl dt.link{padding-top:10px;padding-bottom: 2px;}
+.home-banner .left dl dt.link a{color:#fff;margin-right:3px;font-weight:bold;}
+.home-banner .left dl dt.link a:hover{text-decoration:;}
+.home-banner .right img{display:block;}
+
+.home-module-press{border-bottom:1px dashed #bec0c2;height:239px;}
+.home-module-press .head{padding:20px 12px 14px 12px;line-height:20px;font-size:17px;color:#EE3224;font-family:'Georgia';}
+.home-module-press .head a{color:#EE3224;}
+.home-module-press .head img{margin-left:5px;}
+.home-module-press .head a:hover{text-decoration:underline;}
+.home-module-press dl{padding:0 12px;}
+.home-module-press dl dt{font-size:11px;color:#807F83;padding-bottom:5px;}
+.home-module-press dl dd{font-size:12px;font-weight:bold;padding-bottom:11px;}
+.home-module-press dl dd a{color:#1E1E1E;}
+.home-module-press dl dd a:hover{color:#EE3224;}
+.home-module-press ul li a{color:#7F8184;}
+.home-module-press ul li a:hover{color:#EE3224;}
+
+
+.home-module-info .module .top{border-left:1px dashed #bec0c2;}
+.home-module-info .module .title{height:25px;padding-left:12px;font-size:12px;color:#807F83;padding-top:20px;}
+.home-module-info .module .body{height:75px;padding-left:12px;font-size:17px;font-family:'Georgia';}
+.home-module-info .module .body a{color:#1E1E1E;}
+.home-module-info .module .body a:hover{color:#EE3224;}
+.home-module-info .module .img img{display:block;}
+
+.home-intro{padding:24px 12px; height:132px;border-bottom:1px dashed #bec0c2;}
+.home-intro a{font-size:22px;color:#807F83;}
+.home-intro img{margin-left:5px;}
+
+.home-policy-holder .text{padding:12px 12px 0 12px;}
+.home-policy-holder .company-logo{margin:19px 0 14px 135px;}
+.home-policy-holder .company-logo div{float:left;width:228px;height:74px;float:left;padding-right:12px;}
+.home-policy-holder .company-logo div img{display:block;}
+.home-policy-holder .company-logo div a{display:block; width:228px; height:73px; background-position:0px 0px;}
+.home-policy-holder .company-logo div a:hover{ background-position: 0px -73px; }
+.home-policy-holder .company-logo div a#bankers:hover{background-position: -14px 78px !important;}
+.home-policy-holder .company-logo div a#bankers{background-image:url(/content/cfgi/images/rollover-logo-bankers.gif);background-position: -14px -12px !important;}
+.home-policy-holder .company-logo div a#colonial{background-image:url(/content/cfgi/images/rollover-logo-colonial.gif);}
+.home-policy-holder .company-logo div a#washington{background-image:url(/content/cfgi/images/rollover-logo-washington.gif);}
+.home-policy-holder .company-logo div a#conseco{background-image:url(/content/cfgi/images/rollover-nologo-conseco.gif); padding-left:20px; color:#807F83;}
+.home-policy-holder .company-logo div a#conseco:hover{ color:red;}
+
+/**************** interior *****************/
+.top-banner-intro{height:240px;background-color:#EDE8DF;}
+.top-banner-intro dl{margin:94px 12px 12px 12px;}
+.top-banner-intro dl dt{font-size:29px;}
+.top-banner-intro dl dd{font-size:16px; margin-top:20px;color:#807f83;}
+
+.top-banner-intro-career {height:240px;background-color:#EDE8DF;}
+.top-banner-intro-career  dl{margin:4px 12px 12px 12px;}
+.top-banner-intro-career  dl dt{font-size:29px;}
+.top-banner-intro-career  dl dd{font-size:14px; margin-top:20px;color:#807f83;}
+
+
+
+
+.landing-page-module{width:215px;height:209px;padding:18px 12px 12px 12px;border-left:1px dashed #bec0c2;border-bottom:1px dashed #bec0c2;float:left;position:relative;}
+.landing-page-module-contact{width:215px;height:350px;padding:18px 12px 12px 12px;border-left:1px dashed #bec0c2;border-bottom:1px dashed #bec0c2;float:left;position:relative;}
+
+.landing-page-module a.module-heading{font-size:16px;color:#1E1E1E;font-family:'Georgia';}
+.landing-page-module a.heading-hover{color:#EE3224;}
+.landing-page-module p{font-size:12px;color:#7F8184;}
+.landing-page-module a.module-logo{display:block;width:215px;height:90px;background-position:0px 0px; background-repeat:no-repeat;position:absolute;bottom:12px;left:0;}
+.landing-page-module a.logo-hover{background-position:0px -90px;}
+.landing-page-module a#bankers{background-image:url(/content/cfgi/images/rollover-module-bankers.gif);}
+.landing-page-module a#colonial{background-image:url(/content/cfgi/images/rollover-module-colonial.gif);}
+.landing-page-module a#washington{background-image:url(/content/cfgi/images/rollover-module-washington.gif);}
+.landing-page-module a#advisor{background-image:url(/content/cfgi/images/rollover-module-4086advisors.gif);}
+.landing-page-module a#conseco{background-image:url(/content/cfgi/images/rollover-module-conseco.gif);}
+.landing-page-module div.website a{margin-left:5px;color:#EE3224;}
+.landing-page-module div.website a:hover{text-decoration:underline;}
+.landing-page-module ul,.landing-page-module ul li {list-style-type:none;}
+/* ------ Three column layout with right sidebar ---------*/
+.content-section .main-content-with-right-side-bar{border-top:1px dashed #bec0c2;}
+.content-section .main-content-with-right-side-bar .main-content{width:456px;padding:17px 12px;float:left;}
+.content-section .main-content-with-right-side-bar .main-content-whycno{width:620px;padding:17px 12px;float:left;}
+.content-section .main-content-with-right-side-bar .main-content-whycno .content-width{width:620px;}
+.content-section .main-content-with-right-side-bar .main-content-recruiting{width:720px;float:left;}
+.content-section .main-content-with-right-side-bar .main-content .company-logo {text-align:right;width:100%;}
+.content-section .main-content-with-banner-and-sidebar .main-content { width:480px; float:left; }
+
+/* Awards */
+.content-section .main-content-with-right-side-bar .main-content-awards{width:510px;padding:17px 17px;float:left;}
+.content-section .main-content-with-right-side-bar .main-content-awards .home-module-press{border-bottom:0;border-top:1px solid #bec0c2;height:auto;}
+.content-section .main-content-with-right-side-bar .main-content-awards .home-module-press .head,
+.content-section .main-content-with-right-side-bar .main-content-awards .home-module-press dl{padding-left:0;padding-right:0;}
+.content-section .main-content-with-right-side-bar .main-content-awards .home-module-press .head{padding-top:12px;}
+.content-section .main-content-with-right-side-bar .main-content-awards .home-module-press div.thumb-desc{clear:both;padding-bottom:23px;padding-left:20px;}
+.content-section .main-content-with-right-side-bar .main-content-awards .home-module-press .thumb {float:left;width:100px;height:100px;clear:left;}
+
+.content-section .main-content-with-right-side-bar .main-content-awards .home-module-press .desc{float:right;width:342px;clear:right;}
+.content-section .main-content-with-right-side-bar .main-content-awards .home-module-press .description{color:#1E1E1E;font-size:12px;}
+
+
+
+
+/* content module */
+.content-section .main-content-with-right-side-bar .main-content .home-module-press{border-bottom:0;border-top:1px solid #bec0c2;height:auto;}
+.content-section .main-content-with-right-side-bar .main-content .home-module-press .head,
+.content-section .main-content-with-right-side-bar .main-content .home-module-press dl{padding-left:0;padding-right:0;}
+.content-section .main-content-with-right-side-bar .main-content .home-module-press .head{padding-top:12px;}
+
+/* featured and recent */
+.home-module-press div.thumb-desc{clear:both;padding-bottom:27px;}
+.home-module-press .thumb {float:left;width:100px;height:100px;clear:left;}
+
+.home-module-press .desc{float:right;width:342px;clear:right;}
+.home-module-press .description{color:#1E1E1E;font-size:12px;}
+.content-section .main-content-with-right-side-bar .main-content .featured .home-module-press .thumb-desc dl dd,
+.content-section .main-content-with-right-side-bar .main-content .recent-stories .home-module-press dl dd{padding-bottom:2px;}
+.content-section .main-content-with-right-side-bar .main-content .recent-stories .home-module-press .description{padding-bottom:10px;margin-bottom:10px;}
+.home-module-press div.download-link a{color:#EE3224}
+/* Content details */
+.content-details .date{color:#7F8184;}
+.content-details p{padding-bottom:22px;}
+.content-details b{display:block;clear:both;}
+.content-details .links a{display:block;clear:both;color:#EE3224;padding-bottom:3px;padding-top:3px;font-weight:bold;}
+.content-details .links a:hover{text-decoration:underline;}
+.content-details #gallery a{color:#EE3224;font-weight:bold;}
+.content-details #gallery a:hover{text-decoration:underline;}
+
+.approach-content-list{padding-bottom:25px;}
+.approach-content-list dt{font-weight:bold;}
+.approach-content-list dt ul{font-weight:normal;padding-left:12px;}
+.approach-content-list dt ul li{list-style-type:none;background-image:url(/content/cfgi/images/body_bullet.png);background-repeat:no-repeat;background-position:center left;padding-left:12px;}
+
+
+/* ---------------------------------------------------------------- / content */
+
+
+/*************** Block Styles ********************/
+
+/*global*/
+.block{border-left:1px dashed #bec0c2;border-bottom:1px dashed #bec0c2;padding:17px 12px;min-height:205px;}
+.block h4 {font-family:'Georgia';font-size:16px;padding-bottom:12px; font-weight:normal;}
+.block h4 a{color:#1E1E1E;}
+.block h4 a:hover{color:#EE3224;}
+
+
+
+.block-site-link div {font-family:'Georgia';font-size:16px;padding-bottom:12px;}
+.block-site-link div a{color:#EE3224; margin-right:5px;}
+.block-site-link div a:hover{text-decoration:underline;}
+div.download-link{padding-top:10px;}
+div.download-link a{margin-right:6px;font-weight:bold;}
+div.download-link a:hover{text-decoration:underline;}
+
+/*related content block*/
+.block ul.content-link{}
+.block ul.content-link li{list-style-type:none;padding:2px 0;background-image:url(/content/cfgi/images/icon-dotsquare.png);background-repeat:no-repeat;background-position:0 8px;padding-left:15px;}
+.block ul.content-link li a{color:#1E1E1E;font-weight:bold;}
+.block ul.content-link li a:hover{color:#EE3224;}
+
+/*contact block*/
+.block-contact{background-color:#E6E7E8;}
+.block-contact dl {padding-bottom:6px;}
+.block-contact dl dt{padding-bottom:2px;}
+.block-contact dl .name{font-weight:bold;}
+.block-contact dl .email a{color:#EE3224;margin-left:5px;}
+.block-contact dl .email a:hover{text-decoration:underline;}
+
+/*community report block*/
+.block-community-report h4{font-size:21px;font-family:'Arial';}
+.white{background-color:#fff;color:#7F8184;}
+.white h4{color:#9D3393;}
+.white div.download-link a{color:#EE3224;}
+
+/*profile block*/
+.block-profile{padding:0px; border:none; color:#7F8184;}
+.block-profile h4{padding-bottom:5px;}
+.block-profile .top{border-left:1px dashed #bec0c2;padding:17px 12px;height:86px;}
+.block-profile .thumb{background-color:#e6e7e8; width:240px; height:120px;}
+.block-profile .thumb img{display:block; float:right;}
+
+/*career block*/
+.block-career {color:#7F8184; min-height:270px;}
+.block-career h4{padding-bottom:5px; color:Black;}
+.block-career .content-link {padding-top:14px;}
+.block-career.login {position:relative;}
+
+.block-career.login a{color:#000000;margin-left:0px;}
+.block-career.login a:hover{color:red;}
+/*.block-career.login h4{color:#EE3224;}*/
+.block-career.login .user-links {position:absolute; bottom:20px; width:215px;}
+.block-career.login .user-links a{display:block;color:#7F8184;}
+.block-career.login .user-links a#new {float:left; line-height:26px;}
+.block-career.login .user-links a#new:hover {text-decoration:underline;}
+.block-career.login .user-links a#existing{float:right;} 
+
+/*recruiting block*/
+.recruiting-career {color:black; min-height:40px;background-color:#EDE8DF; text-align:middle;}
+
+
+/**************** footer *****************/
+
+.footer{padding:15px 0;border-top:1px solid #e6e7e8; font-size:11px;}
+.footer ul {margin-left:12px;}
+.footer ul li{display:inline;list-style-type:none;}
+.footer ul li,
+.footer ul li a
+	{color:#7F8184;}
+.footer ul li a:hover{color:#EE3224;}
+.footer ul li span{padding:0 5px 0 10px; color:#bec0c2;}
+
+
+
+/**************** top nav *****************/
+.top-nav{height:42px;z-index:10;position:relative;}
+
+#menu {
+	float: right;
+	position:relative;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	background: #fff;
+	float: left;
+	position:relative;
+}
+#menu ul ul{
+	padding: 10px 12px;
+	border:1px solid #E6E7E8;	
+}
+#menu ul ul li{
+	width:150px;
+}
+#menu ul ul li a{
+	padding:3px 0;
+}
+#menu a{
+	display: block;
+	margin: 0;
+}
+
+
+#menu a {
+	color: #7F8184;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	color: #EE3224;
+	background: #fff;
+}
+
+#menu li {position: relative;white-space:nowrap;}
+
+#menu ul ul {
+	position: absolute;
+	z-index: -10;
+	top:42px;
+	left:0px;
+}
+
+#menu ul ul ul {
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+div#menu ul ul,
+div#menu ul li:hover ul ul,
+div#menu ul ul li:hover ul ul
+{display: none;}
+
+div#menu ul li:hover ul,
+div#menu ul ul li:hover ul,
+div#menu ul ul ul li:hover ul
+{display: block;}
+
+#menu a.top{height:42px;background-position:12px 0;background-repeat:no-repeat;border-left:1px solid #fff;border-right:1px solid #fff;background-color:#fff;border-left:1px solid #fff;border-right:1px solid #fff;}
+/*#menu a.hover{height:42px;background-position:12px -12px;height:43px;background-repeat:no-repeat;border-left:1px solid #fff;border-right:1px solid #fff;}*/
+#menu a.top:hover,
+#menu a.hover-effect{background-position:12px -42px;height:43px;background-repeat:no-repeat;border-left:1px solid #E6E7E8;border-right:1px solid #E6E7E8;}
+#menu li.active a.top{background-position:12px -42px;}
+#menu ul.active a.top{background-position:12px -42px;}
+
+#menu #our-companies{width:117px;}
+#menu #about-cno{width:95px;}
+#menu #investors{width:79px;}
+#menu #media{width:62px;}
+#menu #careers{width:70px;}
+#menu #contact-cno{width:90px;}
+
+#menu #our-companies a.top{background-image:url(/content/cfgi/images/topnav-companies.gif);width:115px;}
+#menu #about-cno a.top{background-image:url(/content/cfgi/images/topnav-aboutcno.gif);width:93px;}
+#menu #investors a.top{background-image:url(/content/cfgi/images/topnav-investors.gif);width:77px;}
+#menu #media a.top{background-image:url(/content/cfgi/images/topnav-media.gif);width:60px;}
+#menu #careers a.top{background-image:url(/content/cfgi/images/topnav-careers.gif);width:68px;}
+#menu #contact-cno a.top{background-image:url(/content/cfgi/images/topnav-contactus.gif);width:88px;}
+
+
+
+.content-section .main-content-with-right-side-bar .main-content .recent-stories-first .home-module-press { border:#fff 0px solid; }
+.content-section .main-content-with-right-side-bar .main-content .recent-stories-first .home-module-press .head { padding-top:0px; }
+
+.webcast a { color:#807F83; }
+.webcast a:hover { color:#EE3224; }
+.webcast a span { color:#000000; }
+.webcast { margin-bottom:7px; }
+
+.recent-stories-first .home-module-press,
+.recent-stories-internal .home-module-press { padding-bottom:12px; }
+
+.grid_18 .landing-page-module .home-module-press { height:auto; border-bottom:#fff 0px solid; }
+.grid_18 .landing-page-module .home-module-press dl { padding-left:0px; padding-right:0px; }
+.grid_18 .landing-page-module .home-module-press dl dd,
+.grid_18 .landing-page-module .home-module-press dl dt { padding-bottom:2px; }
+.grid_18 .landing-page-module .home-module-press .download-link { padding-top:0px; }
+.grid_18 .landing-page-module-right { padding:0px; height:239px; width:239px; }
+
+.landing-page-module-right .quote-box-top { padding-top:18px; padding-left:12px; padding-bottom:6px; font-weight:bold; font-size:12px; }
+.landing-page-module-right .quote-box-top span { font-weight:normal; color:#7f8184; }
+.landing-page-module-right .quote-box-middle { height:138px; width:100%; border-bottom:#bec0c2 1px solid; }
+
+.quote-box-middle-row { width:100%; }
+.quote-box-middle-row-odd { background-color:#e6e7e8; }
+.quote-box-middle-row-even { background-color:#fff; }
+.quote-box-col-left { float:left; width:107px; border-right:#bec0c2 1px solid; height:19px; padding-left:12px; padding-top:4px; font-weight:bold; }
+.quote-box-col-right { float:right; width:107px; height:19px; padding-left:12px; padding-top:4px; line-height:19px; }
+.quote-box-col-right-up-sign { color:#0db14b; }
+.quote-box-col-right-up-sign img { margin-left:6px; }
+.quote-box-bottom .home-module-press { padding-left:12px; padding-top:6px; }
+
+.latest-reports .head { padding-bottom:12px; }
+.latest-reports ul { margin-bottom:22px; }
+
+.main-content .copyright { font-size:11px; color:#808183; padding-top:40px; }
+
+/*press release list page*/
+.block-related-content { position:relative; }
+.bottom-right-absolute { position:absolute; right:20px; bottom:15px; }
+.signup-button { width:65px; height:26px; background:url(/content/cfgi/images/signup-button-press.gif); border:#fff 0px solid; }
+.content .content-section .main-content-with-right-side-bar .main-content .press-release-list dl dd { padding-bottom:22px; }
+
+.archive-links { margin-bottom:22px; }
+.archive-links ul li { padding:0px 3px 0px 6px; display:inline; border-left:#bec0c2 1px solid; }
+.archive-links ul li.first { padding:0px 3px 0px 0px; border-left:#fff 0px solid; }
+.archive-links ul li a { color:#7f8184; }
+.archive-links ul li.active a { color:#ee3224; }
+.archive-links ul li a:hover { color:#ee3224; }
+
+.pagination-links { padding-top:18px; }
+.pagination-links ul li { padding:0px 0px 0px 3px; display:inline; }
+.pagination-links ul li.prev { padding:0px 0px 0px 0px; border-left:#fff 0px solid; }
+.pagination-links ul li.prev-inactive a { display:inline-block; width:4px; height:10px; background:url(/content/cfgi/images/pagination-prev-arrow-inactive.gif) center no-repeat; }
+.pagination-links ul li.prev-active a { display:inline-block; width:4px; height:10px; background:url(/content/cfgi/images/pagination-prev-arrow-active.gif) center no-repeat; }
+.pagination-links ul li.next { padding:0px 0px 0px 3px; border-left:#fff 0px solid; }
+.pagination-links ul li.next-inactive a { display:inline-block; width:4px; height:10px; background:url(/content/cfgi/images/pagination-next-arrow-inactive.gif) center no-repeat; }
+.pagination-links ul li.next-active a { display:inline-block; width:4px; height:10px; background:url(/content/cfgi/images/pagination-next-arrow-active.gif) center no-repeat; }
+.pagination-links ul li a { color:#7f8184; }
+.pagination-links ul li.active a { color:#ee3224; }
+.pagination-links ul li a:hover { color:#ee3224;}
+
+.page-title-with-search-box h1 { width:670px; }
+
+.search-box { float:right; position:relative; width:290px; }
+.search-box #search-media-text { position:absolute; height:17px; width:198px; border:1px solid; font-size:11px; color:#7f8184; padding-top:5px; padding-left:5px; display:block; left:0px; top:10px; }
+.search-box #search-media-button { position:absolute; width:62px; height:26px; background:url(/content/cfgi/images/search-button-press.gif); border:#fff 0px solid; display:inline-block; padding:0px; margin:0px; right:10px; top:10px; }
+
+/*stock information*/
+.stock-info-tabs ul li { border:#fff 0px solid; }
+
+.main-content .recent-stories-first .quote-box-bottom .home-module-press .download-link { padding-top:0px; }
+.main-content .recent-stories-first .quote-box-bottom .home-module-press { padding-left:0px; }
+.main-content .recent-stories-first .quote-box-middle .quote-box-middle-row .quote-box-col-left { width:110px; }
+.main-content .recent-stories-first .quote-box-middle .quote-box-middle-row .quote-box-col-right { width:321px; }
+.main-content .recent-stories-first .quote-box-middle { border-top:#BEC0C2 1px solid; border-bottom:#BEC0C2 1px solid; }
+.main-content .recent-stories-first .quote-box-top { padding-bottom:3px; }
+.main-content .recent-stories-first .quote-box-top span { color:#7F8184; font-weight:normal; }
+.main-content .recent-stories .copyright { padding-top:10px; }
+
+.powered-by-block { padding-top:5px; padding-bottom:3px; }
+
+/* job search */
+
+.job-search .head { font-size:18px; color:#1e1e1e; }
+.form-row { margin-top:10px; }
+.form-col-left { float:left; width:105px; padding-top:3px; text-align:right; }
+.form-col-right { float:right; width:340px; }
+
+#job-search { width:62px; height:26px; background:url(/content/cfgi/images/search-button-press.gif) no-repeat; border:#fff 0px solid; position:absolute; bottom:15px; right:5px; }
+.submit-button-row { position:relative; height:60px; width:100%; }
+
+.career-login h4 { font-size:16px; color:#ee3224; }
+.career-login .bottom-right-absolute { position:absolute; right:20px; bottom:30px; }
+.career-login .bottom-left-absolute { position:absolute; left:12px; bottom:37px; }
+.career-login .bottom-left-absolute a { color:#ee3224; }
+.career-login .bottom-left-absolute a:hover { color:#ee3224; text-decoration:underline; }
+.career-login { color:#7f8184; }
+
+/*contact */
+.contact-modules { color:#1e1e1e; }
+.content-section .grid_24 .contact-modules .home-module-press { position:relative; height:209px; width:215px; }
+.contact-modules .head { padding:0px; font-size:16px; color:#1e1e1e; }
+
+.landing-page-module-right.contact-modules { padding:18px 12px 12px 12px; height:209px; width:215px; }
+
+.contact-modules .bottom-left-absolute { position:absolute; left:12px; bottom:12px; text-align:left; }
+
+/* site map */
+.sitemap-left { float:left; width:228px; }
+.sitemap-right { float:left; width:228px; }
+.sitemap .home-module-press a { font-size:16px; }
+.sitemap .home-module-press dd a { font-size:12px; }
+.sitemap .home-module-press dd.active a { color:#ee3224; }
+.sitemap .home-module-press .head { padding-bottom:0px; }
+.sitemap .home-module-press .bottom-space { margin-bottom:20px; width:100%; height:0px; }
+
+/* Why CNO */
+.whycno-body {font-size:12px; color:black;}
+.whycno-left { float:left; width:400px; }
+.whycno-right { float:left; width:400px; }
+.headings {font-size:14px;color:blue;text-decoration:underline;}
+
+/* Table */
+table {cellspacing:0; cellpadding:0;width: 600px; height: 220px; border-width:0 0 1px 1px;border-style:black solid;border-collapse:collapse;}
+tr {}
+td {width:50%; text-align:center;border: black 1px solid}
+
+/* Accordion */
+
+
+.msg_list {
+	margin: 0px;
+	padding: 0px;
+	width: 550px;
+}
+.msg_head {
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+	background-color:#EDE8DF;
+	font-weight:bold;
+	color:#7F8184;
+	margin:1px;
+}
+.msg_body {
+	padding: 5px 10px 15px;
+	
+}
+
+/* AR 150315 */
+.disclosure{
+  font-size: 11px;
+  color: #7f8184;
+  margin-left: 11px;
+  margin-top:33px;
+  width:934px;
+}
+
+/* AR 150245 */
+.glance-right-content{
+width: 176px;
+float: right;
+}
+
+.glance-right-content b{
+color: black;
+}
+
+.head+.thumb-desc .thumb img[src*="alzheimer"] {
+  width: 100px;
+  height: 41px;
+}

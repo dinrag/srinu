@@ -1,0 +1,133 @@
+/* Menu coding*/
+jQuery(document).ready(function() {
+	jQuery('#menu .top').hover(
+		function(){
+			var child = jQuery($(this).parent().children());
+			if(child.length < 2){
+				$(this).css({'border-left-color' : '#fff', 'border-right-color' : '#fff'});
+			}
+		},
+		function(){
+			
+		}
+	);
+	
+	jQuery('#menu ul ul').hover(
+		function(){
+			var top = jQuery(jQuery(this).parent().children()[0]);
+			if(top.hasClass('top')){
+				top.addClass('hover-effect');
+				//top.css({'background-position' : '12px -42px'});
+			}
+		},
+		function(){
+			var top = jQuery(jQuery(this).parent().children()[0]);
+			if(top.hasClass('top')){
+				top.removeClass('hover-effect');
+				//top.css({'background-position' : '12px 0px'});
+			}
+		}
+	);
+});
+
+// Code to decorate the text with corresponding fonts
+Cufon.DOM.ready(function() {
+	Cufon.set('fontFamily', 'ScalaSans-RegularLF').replace('.home-banner .left .head')('.home-intro a');
+	Cufon.set('fontFamily', 'ScalaSans-BoldLF').replace('.block-community-report h4');
+});
+
+// company landing page module
+jQuery(document).ready(function() {
+	jQuery('.company .landing-page-module a.module-heading').hover(
+		function(){
+			jQuery($(this).parent().find('a.module-logo')).addClass('logo-hover');
+			$(this).addClass('heading-hover');
+		},
+		function(){
+			jQuery($(this).parent().find('a.module-logo')).removeClass('logo-hover');
+			$(this).removeClass('heading-hover');
+		}
+	);
+
+	jQuery('.company .landing-page-module a.module-logo').hover(
+		function(){
+			jQuery($(this).parent().find('a.module-heading')).addClass('heading-hover');
+			$(this).addClass('logo-hover');
+		},
+		function(){
+			jQuery($(this).parent().find('a.module-heading')).removeClass('heading-hover');
+			$(this).removeClass('logo-hover');
+		}
+	);
+});
+/* search box toggle text function*/
+function textBoxFocusInOut(elementSelector,toggleText){
+	$(elementSelector).focus(function(){
+		if($(this).attr("value")==toggleText){
+			$(this).attr("value","");
+		}								   
+	});
+	$(elementSelector).focusout(function(){
+		if($(this).attr("value")==""){
+			$(this).attr("value",toggleText);
+		}								   
+	});
+}
+
+/* play video */
+var playMe = function (id){
+	var video = $('#' + id);
+	
+	var videoContainer = $('#flash_video');
+	videoContainer.empty();
+	videoContainer.html('<div id = "video_palyer"></div>');
+	
+	// play the video
+	var videoPath = video.attr('href');
+	var flashvars = {
+			file:videoPath,
+			autostart:"true"
+	}
+	var params = {
+			allowfullscreen:"true",
+			allowscriptaccess:"always"
+	}
+	var attributes = {
+			id:"player1",
+			name:"player1"
+	}
+	swfobject.embedSWF("player.swf", "video_palyer", "456", "444", "9.0.115", false, flashvars, params, attributes);
+
+	// set thedescription
+	var title = video.parent().siblings('.title').html();
+	if ($.trim(title) <= 0) {
+		title = '';
+	}
+	var date = video.parent().siblings('.date').html();
+	if ($.trim(date) <= 0) {
+		date = '';
+	}
+	var desc = video.parent().siblings('.desc').html();
+	if ($.trim(desc) <= 0) {
+		desc = '';
+	}
+	$('.video h2').html(title);
+	$('.video .date').html(date);
+	$('.video .video-desc').html(desc);
+	
+	return false;
+}
+
+
+$(document).ready(function(){
+	if ($.browser.msie && $.browser.version < 7) {
+		$('#menu ul li').hover(
+			function(){
+				$(this).children('ul').css('display', 'block');
+			},
+			function() {
+				$(this).children('ul').css('display', 'none');
+			}
+		);
+	}
+});
