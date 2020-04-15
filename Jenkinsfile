@@ -2,9 +2,7 @@ pipeline {
 
     agent any
 
-     def tomcatWeb = '/home/dineshreddy99077/noida/apache-tomcat-7.0.103/webapps'
-     def tomcatBin = '/home/dineshreddy99077/noida/apache-tomcat-7.0.103/bin'
-     def tomcatStatus = ''
+     
     stages {
 
         stage ('compile') {
@@ -57,11 +55,7 @@ pipeline {
 
          }
          
-         stage('deploy in tomcat')
-        sh "cp target\\TomcatMavenApp-2.0.war \"${5}(tomcatWeb)\\TomcatMavenApp-2.0.war\""
-          sleep(time:5,unit:"SECONDS")
-        sh "${5}(tomcatBin)\\startup.sh"
-        sleep(time:5,unit:"SECONDS")
+        
 
         
 
