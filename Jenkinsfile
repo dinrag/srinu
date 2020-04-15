@@ -3,7 +3,7 @@ pipeline {
     agent any
 
      def tomcatWeb = '/home/dineshreddy99077/noida/apache-tomcat-7.0.103/webapps'
-     def tomcatWeb = '/home/dineshreddy99077/noida/apache-tomcat-7.0.103/bin'
+     def tomcatBin = '/home/dineshreddy99077/noida/apache-tomcat-7.0.103/bin'
      def tomcatStatus = ''
     stages {
 
