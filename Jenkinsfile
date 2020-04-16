@@ -67,7 +67,7 @@ pipeline {
             steps{
             
                 withMaven(maven : '/opt/mvn/apache-maven-3.6.3'){
-           sh 'cp target/TomcatMavenApp-2.0.war /home/dineshreddy99077/noida/apache-tomcat-7.0.103/webapps/'
+           sh 'cp target/sampe-app.war.war /home/dineshreddy99077/noida/apache-tomcat-7.0.103/webapps/'
                 sh 'mvn deploy'
                 }
             }
