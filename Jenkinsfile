@@ -54,7 +54,7 @@ pipeline {
                 withMaven(maven : '/opt/mvn/apache-maven-3.6.3') {
 
                     sh 'mvn package'
-                    sh 'mv target/*.war target/TomcatMavenApp-2.0.war'
+                   
 
                 }
 
