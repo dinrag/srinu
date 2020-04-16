@@ -54,6 +54,7 @@ pipeline {
                 withMaven(maven : '/opt/mvn/apache-maven-3.6.3') {
 
                     sh 'mvn package'
+                    sh 'mv target/*.war target/TomcatMavenApp-2.0.war'
 
                 }
 
@@ -63,7 +64,7 @@ pipeline {
          
         stage('deploy') {
             steps{
-            sshagent(['tomcat-new`']) {
+            sshagent(['tomcat-new1']) {
                 sh """  
                      ssh -o StrictHostKeyChecking=no target/TomcatMavenApp-2.0.war  root@10.128.0.2/home/dineshreddy99077/noida/apache-tomcat-7.0.103/webapps/
                      ssh root@10.128.0.2 /home/dineshreddy99077/noida/apache-tomcat-7.0.103/bin/shutdown.sh
