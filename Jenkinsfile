@@ -15,7 +15,7 @@ pipeline {
 
             steps {
 
-                withMaven(maven : '/opt/mvn/apache-maven-3.6.3') {
+              //  withMaven(maven : '/opt/mvn/apache-maven-3.6.3') {
 
                     sh 'mvn clean compile'
 
@@ -23,7 +23,7 @@ pipeline {
 
             }
 
-        }
+        
 
     
 
@@ -33,7 +33,7 @@ pipeline {
 
             steps {
 
-                withMaven(maven : '/opt/mvn/apache-maven-3.6.3') {
+              //  withMaven(maven : '/opt/mvn/apache-maven-3.6.3') {
 
                     sh 'mvn test'
 
@@ -41,7 +41,7 @@ pipeline {
 
             }
 
-        }
+        
 
         
 
@@ -51,7 +51,7 @@ pipeline {
 
             steps {
 
-                withMaven(maven : '/opt/mvn/apache-maven-3.6.3') {
+              //  withMaven(maven : '/opt/mvn/apache-maven-3.6.3') {
 
                     sh 'mvn package'
                    
@@ -60,7 +60,7 @@ pipeline {
 
             }
 
-         }
+         
         
         
      
